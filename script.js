@@ -4,7 +4,7 @@ function checkpassword(){
     if(password===correctpassword){
         document.getElementById('result').innerHTML="Correct! You've cracked the password";
         setTimeout(function(){
-            window.location.href="final.html";
+            window.location.href="Final.html";
         },2000);
     }else{
         document.getElementById('result').innerHTML="Incorrect. Try again!";
