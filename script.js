@@ -17,10 +17,10 @@ document.getElementById('togglePassword').addEventListener('click',function(){
     var icon=this;
     if(passwordField.type==='password'){
         passwordField.type='text';
-        icon.textContent='👁️‍🗨️';
+        icon.textContent='.';
     
     }else{
         passwordField.type='password';
-        icon.textContent='👁️‍🗨️';
+        icon.textContent='.';
     }
 });
