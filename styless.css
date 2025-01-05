@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #000000, #555555); 
+    color: #FFFFFF; 
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 90%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    color: #39ff14;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px #39ff14, 0px 0px 20px #00ff00;
+    animation: flicker 2s infinite; /* Flicker effect */
+}
+
+@keyframes flicker {
+    0%, 100% {
+        text-shadow: 0px 0px 10px #39ff14, 0px 0px 20px #00ff00;
+    }
+    50% {
+        text-shadow: 0px 0px 5px #39ff14, 0px 0px 10px #00ff00;
+    }
+}
+
+#revealText {
+    font-size: 1.5rem;
+    color: #e0e0e0; 
+    margin-top: 20px;
+    white-space: pre-wrap; /* Preserve spaces for letter-by-letter reveal */
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6f61; /* Contrasting color */
+    margin-top: 20px;
+}

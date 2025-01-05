@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(to bottom, #000, #333); /* Black to dark grey gradient */
+    color: #00ff00; /* Neon green text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+#header{
+    margin:0;
+    font-size: 2em;
+}
+
+.hidden-link {
+    visibility: hidden;
+    text-decoration: none; 
+    pointer-events: none;
+    position: absolute;
+    color: #00ff00;
+    transition: visibility 0s, opacity 0.5s ease;
+    opacity: 0;
+}
+
+/* Optional: Make the link appear when hovered over a specific area */
+.container:hover .hidden-link {
+    visibility: visible;
+    pointer-events: auto; /* Allows clicking */
+    opacity: 1;  
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+50%{
+    opacity: 0.5;
+}
+}
